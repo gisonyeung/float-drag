@@ -5,17 +5,17 @@
 
 # 使用示意
 ① 引入 JS 文件
-```
+```JavaScript
 <script src="float-drag.js"></script>
 ```
 
 ② 绑定
-```
+```JavaScript
 new FloatDrag(document.getElementById('ball'));
 ```
 
 # 参数
-```
+```JavaScript
 new FloatDarg(ele, option);
 ```
 其中：
