@@ -18,10 +18,10 @@
     var FloatDrag = function(ele, options) {
         var defaults = {
             edge: {
-            	left: 0,
-            	right: 0,
-            	top: 0,
-            	bottom: 0
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0
             },
             isRemember: true,
         };
@@ -34,10 +34,10 @@
         }
 
         options.edge = {
-        	left: parseInt(options.edge.left, 10) || 0,
-        	right: parseInt(options.edge.right, 10) || 0,
-        	top: parseInt(options.edge.top, 10) || 0,
-        	bottom: parseInt(options.edge.bottom, 10) || 0,
+            left: parseInt(options.edge.left, 10) || 0,
+            right: parseInt(options.edge.right, 10) || 0,
+            top: parseInt(options.edge.top, 10) || 0,
+            bottom: parseInt(options.edge.bottom, 10) || 0,
         }
 
         var data = {
@@ -67,9 +67,9 @@
         var strStoreDistance = '';
         // 支持 localstorage 的设备则读取元素上次的位置
         if (options.isRemember 
-        	&& ele.id 
-        	&& win.localStorage 
-        	&& (strStoreDistance = localStorage['FloatDrag_' + ele.id])
+            && ele.id 
+            && win.localStorage 
+            && (strStoreDistance = localStorage['FloatDrag_' + ele.id])
         ) {
             var arrStoreDistance = strStoreDistance.split(',');
             ele.distanceX = +arrStoreDistance[0];
